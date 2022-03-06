@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    outline: 0;
+    outline: none !important;
     font-family: 'Poppins', sans-serif;
     scrollbar-width: thin;
     scrollbar-color: #878787 #ffffff;
@@ -82,10 +82,11 @@
 
 html,
 body {
-    background-color: var(--bg-color-light);
+    background: linear-gradient(180deg, #FFFFFF 6.57%, #F6F6F6 100%);
 }
 
-a {
+a,
+a:hover {
     text-decoration: none;
     transition: linear .2s;
 }
@@ -171,21 +172,32 @@ table thead tr th:hover .sorting-arrow {
 }
 
 .btn-theme {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 22px;
     color: var(--color-white);
     background-color: var(--color-primary);
-    border-radius: 0;
     border: none;
-    padding: 7px 18px;
-    border-radius: 2px;
+    padding: 10px 25px;
+    border-radius: 6px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    display: inline-flex;
+    border: none;
+    align-items: center;
+}
+
+.btn-theme img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.btn-theme:hover {
+    color: var(--color-white);
 }
 
 .modal {
@@ -222,8 +234,9 @@ table thead tr th:hover .sorting-arrow {
 }
 
 .page-area {
-    padding: 24px 20px 30px 255px;
+    padding-left: 250px;
     width: 100%;
+    padding-bottom: 25px;
 }
 
 
@@ -267,6 +280,9 @@ table thead tr th:hover .sorting-arrow {
     padding: 0;
 }
 
+/* .side-bar-menu ul li *{
+    transition: linear .2s;
+} */
 .side-bar-menu ul li {
     margin-bottom: 3px;
 }
@@ -279,17 +295,27 @@ table thead tr th:hover .sorting-arrow {
     color: var(--color-link);
     padding: 13px 27px;
     position: relative;
+    transition: linear .2s;
 }
 
 .side-bar-menu ul li a.active,
 .side-bar-menu ul li a:hover {
     color: var(--color-white-active);
     background-color: var(--bg-color-sidebar-active);
+    transition: linear .2s;
 }
 
 
 .side-bar-menu ul li a span.menu-icon {
     margin-right: 11px;
+    color: #494B74;
+    transition: linear .2s;
+}
+
+.side-bar-menu ul li a:hover span.menu-icon,
+.side-bar-menu ul li a.active span.menu-icon {
+    color: var(--color-primary);
+    transition: linear .2s;
 }
 
 .side-bar-menu ul li a span.menu-icon img {
@@ -321,13 +347,18 @@ table thead tr th:hover .sorting-arrow {
 
 .page-area header {
     margin-bottom: 20px;
+    background-color: var(--color-white);
+    box-shadow: 0px 3px 7px #8a8e9405;
+    border-bottom: 1px solid #858b9b1a;
+    padding: 15px 20px;
 }
 
 .page-title {
     font-weight: 500;
-    font-size: 21px;
+    font-size: 24px;
     line-height: 36px;
     color: var(--text-color);
+    margin: 0;
 }
 
 .search-box form {
@@ -337,7 +368,7 @@ table thead tr th:hover .sorting-arrow {
 .search-box form label {
     position: absolute;
     width: 18px;
-    left: 16px;
+    left: 13px;
     top: 50%;
     transform: translate(0, -50%)
 }
@@ -353,23 +384,23 @@ table thead tr th:hover .sorting-arrow {
 
 .search-box form input {
     width: 285px;
-    height: 50px;
-    border-radius: 6px;
+    height: 38px;
+    border-radius: 4px;
     background-color: var(--color-white);
     color: var(--text-color);
     font-size: 14px;
-    line-height: 16px;
+    line-height: 18px;
     font-weight: 400;
     border: none;
-    padding: 15px;
-    padding-left: 48px;
+    padding: 10px;
+    padding-left: 38px;
 }
 
 .page-area header .user-summery {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    padding-left: 15px;
+    padding-left: 22px;
 }
 
 .page-area header .user-summery .user-img {
@@ -382,26 +413,26 @@ table thead tr th:hover .sorting-arrow {
 .page-area header .user-summery .user-img img {
     border: 2px solid var(--color-white);
     border-radius: 4px;
-    width: 50px;
+    width: 40px;
 }
 
 .page-area header .user-summery .user-id {
-    padding-left: 18px;
+    padding-left: 12px;
 }
 
 .page-area header .user-summery .user-id h3 {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 21px;
     color: var(--color-black);
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .page-area header .user-summery .user-id p {
     font-weight: 400;
-    font-size: 11px;
-    line-height: 11px;
-    color: #6C6865;
+    font-size: 12px;
+    line-height: 18px;
+    color: #949CA9;
     margin: 0;
 }
 
@@ -425,3 +456,285 @@ table thead tr th:hover .sorting-arrow {
     display: block;
     transition: linear .2s;
 }
+
+.notification {
+    position: relative;
+    width: 24px;
+    text-align: center;
+}
+
+.notification img {
+    height: 18px;
+}
+
+.notification span {
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    height: 8px;
+    width: 8px;
+    background-color: #FC424A;
+    border-radius: 12px;
+}
+
+.action-bar {
+    padding: 0 20px;
+    margin-bottom: 23px;
+}
+
+.action-bar-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.action-bar-group form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.action-bar-group form label {
+    width: 270px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    position: relative;
+}
+
+.action-bar-group form label img {
+    position: absolute;
+    width: 18px;
+    left: 18px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.action-bar-group form label input {
+    border: none;
+    padding: 9px 15px;
+    padding-left: 43px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    background: transparent;
+}
+
+.action-bar-group form select {
+    border: none;
+    padding: 9px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+}
+
+.action-bar-group form select option {}
+
+.action-bar-group form button {}
+
+.table-area {
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.table-area table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table-area table thead {}
+
+.table-area table thead tr {
+    height: 75px;
+    border-bottom: 1px solid #E8E9EA;
+}
+
+.table-area table thead tr th {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-link);
+    text-align: center;
+}
+
+.table-area table thead tr th:first-child {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.table-area table thead tr th:last-child {
+    padding-right: 30px;
+}
+
+.table-area table tbody {
+    padding: 0 30px;
+    overflow: hidden;
+    margin: 0 30px;
+    box-sizing: border-box;
+}
+
+.table-area table tbody tr {
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.table-area table tbody tr::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 0;
+    height: 1px;
+    background-color: #E8E9EA;
+}
+
+.table-area table tbody tr td {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.table-area table tbody tr td:first-child {
+    padding-left: 30px;
+}
+
+.table-area table tbody tr td:last-child {
+    padding-right: 30px;
+}
+
+.table-area table tbody tr td.item-title {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.table-area table tbody tr td.item-title .img {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border-radius: 4px;
+    background-color: var(--color-white);
+}
+
+.table-area table tbody tr td.item-title .text {}
+
+.table-area table tbody tr td .table-menu {}
+
+.table-area table tbody tr td .table-menu button {
+    background: transparent;
+    border: none;
+    line-height: 0;
+    padding: 10px;
+}
+
+.table-area table tbody tr td .table-menu .uk-dropdown {
+    background: #FFFFFF;
+    border: 1px solid #E8E9EA;
+    box-shadow: 0px 10px 20px #5f5f5f26;
+    border-radius: 4px;
+    padding: 11px 0;
+}
+
+.table-area table tbody tr td .table-menu .uk-dropdown ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.table-area table tbody tr td .table-menu .uk-dropdown ul li {
+    text-align: left;
+}
+
+.table-area table tbody tr td .table-menu .uk-dropdown ul li a {
+    padding: 9px 15px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-link);
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.table-area table tbody tr td .table-menu .uk-dropdown ul li a .icon {
+    width: 20px;
+    text-align: center;
+    display: table-cell;
+}
+
+.table-area table tbody tr td .table-menu .uk-dropdown ul li a .text {}
+
+.table-area table tbody tr td .table-menu .uk-dropdown ul li a:hover {
+    font-weight: 500;
+    color: var(--color-primary);
+    background-color: #E9F2FA;
+}
+
+.breadcrumb {
+    margin: 0;
+    display: block;
+    padding: 18px 30px;
+}
+
+.breadcrumb p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-link);
+    margin: 0;
+}
+
+.breadcrumb ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
+.breadcrumb ul li {
+    text-align: center;
+}
+
+.breadcrumb ul li a {
+    padding: 11px 0px;
+    width: 35px;
+    height: 36px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    color: var(--color-link);
+}
+
+.breadcrumb ul li.active a,
+.breadcrumb ul li a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.breadcrumb ul li:first-child a {}
+
+.breadcrumb ul li:last-child a {}
