@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory System</title>
+    <title>Stock Adjustment | Inventory System</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <!-- Google Fonts 'Poppins' -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
                 <div class="side-bar-menu">
                     <ul>
                         <!-- Current Stock -->
-                        <li><a href="index.html" class="active"><span class="menu-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li><a href="index.html"><span class="menu-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="8.47059" height="8.47059" rx="2" fill="currentColor" opacity="0.5"/>
                             <rect y="9.52942" width="8.47059" height="8.47059" rx="2" fill="currentColor"/>
                             <rect x="9.52942" width="8.47059" height="8.47059" rx="2" fill="currentColor"/>
@@ -69,7 +69,7 @@
                             </svg></span><span class="menu-text">Purchase Order</span></a></li>
 
                         <!-- Stock Adjustment -->
-                        <li><a href="stock-adjustment.html"><span class="menu-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li><a href="stock-adjustment.html" class="active"><span class="menu-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.43457 4.3103C1.43457 4.91046 1.61534 5.49715 1.95401 5.99616C2.29269 6.49518 2.77406 6.88412 3.33725 7.11379C3.90045 7.34346 4.52018 7.40356 5.11806 7.28647C5.71595 7.16939 6.26514 6.88038 6.69619 6.456C7.12724 6.03162 7.42079 5.49093 7.53972 4.9023C7.65865 4.31366 7.59761 3.70353 7.36433 3.14905C7.13104 2.59457 6.73599 2.12065 6.22913 1.78722C5.72226 1.45379 5.12636 1.27582 4.51676 1.27582C3.69931 1.27582 2.91534 1.59552 2.33732 2.1646C1.7593 2.73367 1.43457 3.5055 1.43457 4.3103ZM5.91775 4.3103C5.91775 4.5831 5.83558 4.84977 5.68164 5.0766C5.5277 5.30343 5.30889 5.48022 5.05289 5.58461C4.7969 5.68901 4.5152 5.71633 4.24344 5.6631C3.97167 5.60988 3.72204 5.47852 3.5261 5.28562C3.33017 5.09272 3.19674 4.84695 3.14268 4.57939C3.08862 4.31183 3.11637 4.03449 3.22241 3.78246C3.32844 3.53042 3.50801 3.315 3.73841 3.16344C3.9688 3.01188 4.23967 2.93099 4.51676 2.93099C4.88832 2.93099 5.24467 3.07631 5.50741 3.33498C5.77015 3.59365 5.91775 3.94448 5.91775 4.3103Z" fill="#2B2B43"/>
                             <path d="M16.5655 13.6896C16.5655 13.0895 16.3847 12.5028 16.0461 12.0038C15.7074 11.5047 15.226 11.1158 14.6628 10.8861C14.0996 10.6565 13.4799 10.5964 12.882 10.7135C12.2841 10.8305 11.7349 11.1196 11.3039 11.5439C10.8728 11.9683 10.5793 12.509 10.4603 13.0976C10.3414 13.6863 10.4025 14.2964 10.6357 14.8509C10.869 15.4054 11.2641 15.8793 11.7709 16.2127C12.2778 16.5461 12.8737 16.7241 13.4833 16.7241C14.3008 16.7241 15.0847 16.4044 15.6627 15.8353C16.2408 15.2663 16.5655 14.4944 16.5655 13.6896ZM12.0823 13.6896C12.0823 13.4168 12.1645 13.1502 12.3184 12.9233C12.4724 12.6965 12.6912 12.5197 12.9472 12.4153C13.2032 12.3109 13.4849 12.2836 13.7566 12.3368C14.0284 12.39 14.278 12.5214 14.474 12.7143C14.6699 12.9072 14.8033 13.153 14.8574 13.4205C14.9114 13.6881 14.8837 13.9654 14.7777 14.2175C14.6716 14.4695 14.4921 14.6849 14.2617 14.8365C14.0313 14.988 13.7604 15.0689 13.4833 15.0689C13.1117 15.0689 12.7554 14.9236 12.4927 14.665C12.2299 14.4063 12.0823 14.0554 12.0823 13.6896Z" fill="#2B2B43"/>
                             <path d="M2.83561 11.8249V14.7931C2.83561 15.3784 3.07178 15.9398 3.49216 16.3536C3.91254 16.7675 4.48269 17 5.0772 17H8.99998V15.3449H5.0772C4.92857 15.3449 4.78603 15.2867 4.68094 15.1833C4.57584 15.0798 4.5168 14.9395 4.5168 14.7931V11.8249L6.16437 13.4469L7.35241 12.2773L4.27023 9.24279C4.11262 9.08781 3.89897 9.00076 3.67621 9.00076C3.45345 9.00076 3.2398 9.08781 3.08219 9.24279L0 12.2773L1.18804 13.4469L2.83561 11.8249Z" fill="currentColor"/>
@@ -162,7 +162,7 @@
                 <div class="action-bar wow fadeInUp">
                     <div class="row">
                         <div class="col-4">
-                            <h2 class="page-title">Current Stock</h2>
+                            <h2 class="page-title">Stock Adjustment</h2>
                         </div>
                         <div class="col-8">
                             <div class="action-bar-group">
@@ -171,12 +171,9 @@
                                         <img src="images/icon/search-icon-2.svg" alt="">
                                         <input id="search" type="search" placeholder="Hardware name...">
                                     </label>
-                                    <select name="" id="">
-                                        <option value="CPU Cooler">CPU Cooler</option>
-                                    </select>
                                     <button type="submit" class="btn-theme">Search</button>
                                 </form>
-                                <a href="#" class="btn-theme"><img src="images/icon/Plus-icon.svg" alt="">Create Part</a>
+                                <a href="#" class="btn-theme"><img src="images/icon/Plus-icon.svg" alt="">Create Stock Adjustment</a>
                             </div>
                         </div>
                     </div>
@@ -187,21 +184,15 @@
                     <table>
                         <thead class="wow fadeInUp">
                             <tr>
-                                <th>Hardware Name</th>
-                                <th>Quantity on Hand</th>
-                                <th>Quantity on Order</th>
-                                <th>Quantity Needed</th>
-                                <th>Total</th>
+                                <th>Report Date</th>
+                                <th>Report Number</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr  class="wow fadeInUp">
-                                <td class="item-title"><span class="img" style="background-image: url(images/apu.jpg);"></span><span class="text">AMD Ryzen 5 5600X 6-Core 3.6 GHz</span></td>
-                                <td>85</td>
-                                <td>80</td>
-                                <td>52</td>
-                                <td>250</td>
+                            <tr class="wow fadeInUp">
+                                <td class="text-start">1/11/2022</td>
+                                <td>#AG18110</td>
                                 <td>
                                     <div class="table-menu">
                                         <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
@@ -211,256 +202,159 @@
                                                 <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg></span><span class="text">View details</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 14.5L0.46967 13.9697L0.25 14.1893V14.5H1ZM14 1.5L14.5303 0.96967C14.2374 0.676777 13.7626 0.676777 13.4697 0.96967L14 1.5ZM18 5.5L18.5303 6.03033C18.8232 5.73744 18.8232 5.26256 18.5303 4.96967L18 5.5ZM5 18.5V19.25H5.31066L5.53033 19.0303L5 18.5ZM1 18.5H0.25C0.25 18.9142 0.585786 19.25 1 19.25L1 18.5ZM1.53033 15.0303L14.5303 2.03033L13.4697 0.96967L0.46967 13.9697L1.53033 15.0303ZM13.4697 2.03033L17.4697 6.03033L18.5303 4.96967L14.5303 0.96967L13.4697 2.03033ZM17.4697 4.96967L4.46967 17.9697L5.53033 19.0303L18.5303 6.03033L17.4697 4.96967ZM5 17.75H1V19.25H5V17.75ZM1.75 18.5V14.5H0.25V18.5H1.75ZM10.4697 5.03033L14.4697 9.03033L15.5303 7.96967L11.5303 3.96967L10.4697 5.03033Z" fill="currentColor"/>
-                                                </svg></span><span class="text">Edit info</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M15 4.5V16.5C15 17.6046 14.1046 18.5 13 18.5H5C3.89543 18.5 3 17.6046 3 16.5V4.5M12 4.5V3.5C12 2.39543 11.1046 1.5 10 1.5H8C6.89543 1.5 6 2.39543 6 3.5V4.5M1 4.5H17M7 8.5V14.5M11 8.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text">Delete</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr  class="wow fadeInUp">
-                                <td class="item-title"><span class="img"  style="background-image: url(images/gpu.jpg);"></span><span class="text">NVidia GeForce RTX™ 3070</span></td>
-                                <td>85</td>
-                                <td>80</td>
-                                <td>52</td>
-                                <td>250</td>
+                            <tr class="wow fadeInUp">
+                                <td class="text-start">1/11/2022</td>
+                                <td>#AG18110</td>
                                 <td>
                                     <div class="table-menu">
                                         <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
                                         <div uk-dropdown="mode: click">
                                             <ul>
                                                 <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg></span><span class="text">View details</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 14.5L0.46967 13.9697L0.25 14.1893V14.5H1ZM14 1.5L14.5303 0.96967C14.2374 0.676777 13.7626 0.676777 13.4697 0.96967L14 1.5ZM18 5.5L18.5303 6.03033C18.8232 5.73744 18.8232 5.26256 18.5303 4.96967L18 5.5ZM5 18.5V19.25H5.31066L5.53033 19.0303L5 18.5ZM1 18.5H0.25C0.25 18.9142 0.585786 19.25 1 19.25L1 18.5ZM1.53033 15.0303L14.5303 2.03033L13.4697 0.96967L0.46967 13.9697L1.53033 15.0303ZM13.4697 2.03033L17.4697 6.03033L18.5303 4.96967L14.5303 0.96967L13.4697 2.03033ZM17.4697 4.96967L4.46967 17.9697L5.53033 19.0303L18.5303 6.03033L17.4697 4.96967ZM5 17.75H1V19.25H5V17.75ZM1.75 18.5V14.5H0.25V18.5H1.75ZM10.4697 5.03033L14.4697 9.03033L15.5303 7.96967L11.5303 3.96967L10.4697 5.03033Z" fill="currentColor"/>
-                                            </svg></span><span class="text">Edit info</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15 4.5V16.5C15 17.6046 14.1046 18.5 13 18.5H5C3.89543 18.5 3 17.6046 3 16.5V4.5M12 4.5V3.5C12 2.39543 11.1046 1.5 10 1.5H8C6.89543 1.5 6 2.39543 6 3.5V4.5M1 4.5H17M7 8.5V14.5M11 8.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text">Delete</span></a></li>
+                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></span><span class="text">View details</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr  class="wow fadeInUp">
-                                <td class="item-title"><span class="img"  style="background-image: url(images/cpu-fan.jpg);"></span><span class="text">Stock AMD CPU Cooler</span></td>
-                                <td>85</td>
-                                <td>80</td>
-                                <td>52</td>
-                                <td>250</td>
+                            <tr class="wow fadeInUp">
+                                <td class="text-start">1/11/2022</td>
+                                <td>#AG18110</td>
                                 <td>
                                     <div class="table-menu">
                                         <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
                                         <div uk-dropdown="mode: click">
                                             <ul>
                                                 <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg></span><span class="text">View details</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 14.5L0.46967 13.9697L0.25 14.1893V14.5H1ZM14 1.5L14.5303 0.96967C14.2374 0.676777 13.7626 0.676777 13.4697 0.96967L14 1.5ZM18 5.5L18.5303 6.03033C18.8232 5.73744 18.8232 5.26256 18.5303 4.96967L18 5.5ZM5 18.5V19.25H5.31066L5.53033 19.0303L5 18.5ZM1 18.5H0.25C0.25 18.9142 0.585786 19.25 1 19.25L1 18.5ZM1.53033 15.0303L14.5303 2.03033L13.4697 0.96967L0.46967 13.9697L1.53033 15.0303ZM13.4697 2.03033L17.4697 6.03033L18.5303 4.96967L14.5303 0.96967L13.4697 2.03033ZM17.4697 4.96967L4.46967 17.9697L5.53033 19.0303L18.5303 6.03033L17.4697 4.96967ZM5 17.75H1V19.25H5V17.75ZM1.75 18.5V14.5H0.25V18.5H1.75ZM10.4697 5.03033L14.4697 9.03033L15.5303 7.96967L11.5303 3.96967L10.4697 5.03033Z" fill="currentColor"/>
-                                            </svg></span><span class="text">Edit info</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15 4.5V16.5C15 17.6046 14.1046 18.5 13 18.5H5C3.89543 18.5 3 17.6046 3 16.5V4.5M12 4.5V3.5C12 2.39543 11.1046 1.5 10 1.5H8C6.89543 1.5 6 2.39543 6 3.5V4.5M1 4.5H17M7 8.5V14.5M11 8.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text">Delete</span></a></li>
+                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></span><span class="text">View details</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr  class="wow fadeInUp">
-                                <td class="item-title"><span class="img"  style="background-image: url(images/mobo.jpg);"></span><span class="text">AsRock B550M-HDV</span></td>
-                                <td>85</td>
-                                <td>80</td>
-                                <td>52</td>
-                                <td>250</td>
+                            <tr class="wow fadeInUp">
+                                <td class="text-start">1/11/2022</td>
+                                <td>#AG18110</td>
                                 <td>
                                     <div class="table-menu">
                                         <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
                                         <div uk-dropdown="mode: click">
                                             <ul>
                                                 <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg></span><span class="text">View details</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 14.5L0.46967 13.9697L0.25 14.1893V14.5H1ZM14 1.5L14.5303 0.96967C14.2374 0.676777 13.7626 0.676777 13.4697 0.96967L14 1.5ZM18 5.5L18.5303 6.03033C18.8232 5.73744 18.8232 5.26256 18.5303 4.96967L18 5.5ZM5 18.5V19.25H5.31066L5.53033 19.0303L5 18.5ZM1 18.5H0.25C0.25 18.9142 0.585786 19.25 1 19.25L1 18.5ZM1.53033 15.0303L14.5303 2.03033L13.4697 0.96967L0.46967 13.9697L1.53033 15.0303ZM13.4697 2.03033L17.4697 6.03033L18.5303 4.96967L14.5303 0.96967L13.4697 2.03033ZM17.4697 4.96967L4.46967 17.9697L5.53033 19.0303L18.5303 6.03033L17.4697 4.96967ZM5 17.75H1V19.25H5V17.75ZM1.75 18.5V14.5H0.25V18.5H1.75ZM10.4697 5.03033L14.4697 9.03033L15.5303 7.96967L11.5303 3.96967L10.4697 5.03033Z" fill="currentColor"/>
-                                            </svg></span><span class="text">Edit info</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15 4.5V16.5C15 17.6046 14.1046 18.5 13 18.5H5C3.89543 18.5 3 17.6046 3 16.5V4.5M12 4.5V3.5C12 2.39543 11.1046 1.5 10 1.5H8C6.89543 1.5 6 2.39543 6 3.5V4.5M1 4.5H17M7 8.5V14.5M11 8.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text">Delete</span></a></li>
+                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></span><span class="text">View details</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr  class="wow fadeInUp">
-                                <td class="item-title"><span class="img"  style="background-image: url(images/ram.jpg);"></span><span class="text">16GB DDR4-3600</span></td>
-                                <td>85</td>
-                                <td>80</td>
-                                <td>52</td>
-                                <td>250</td>
+                            <tr class="wow fadeInUp">
+                                <td class="text-start">1/11/2022</td>
+                                <td>#AG18110</td>
                                 <td>
                                     <div class="table-menu">
                                         <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
                                         <div uk-dropdown="mode: click">
                                             <ul>
                                                 <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg></span><span class="text">View details</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 14.5L0.46967 13.9697L0.25 14.1893V14.5H1ZM14 1.5L14.5303 0.96967C14.2374 0.676777 13.7626 0.676777 13.4697 0.96967L14 1.5ZM18 5.5L18.5303 6.03033C18.8232 5.73744 18.8232 5.26256 18.5303 4.96967L18 5.5ZM5 18.5V19.25H5.31066L5.53033 19.0303L5 18.5ZM1 18.5H0.25C0.25 18.9142 0.585786 19.25 1 19.25L1 18.5ZM1.53033 15.0303L14.5303 2.03033L13.4697 0.96967L0.46967 13.9697L1.53033 15.0303ZM13.4697 2.03033L17.4697 6.03033L18.5303 4.96967L14.5303 0.96967L13.4697 2.03033ZM17.4697 4.96967L4.46967 17.9697L5.53033 19.0303L18.5303 6.03033L17.4697 4.96967ZM5 17.75H1V19.25H5V17.75ZM1.75 18.5V14.5H0.25V18.5H1.75ZM10.4697 5.03033L14.4697 9.03033L15.5303 7.96967L11.5303 3.96967L10.4697 5.03033Z" fill="currentColor"/>
-                                            </svg></span><span class="text">Edit info</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15 4.5V16.5C15 17.6046 14.1046 18.5 13 18.5H5C3.89543 18.5 3 17.6046 3 16.5V4.5M12 4.5V3.5C12 2.39543 11.1046 1.5 10 1.5H8C6.89543 1.5 6 2.39543 6 3.5V4.5M1 4.5H17M7 8.5V14.5M11 8.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text">Delete</span></a></li>
+                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></span><span class="text">View details</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr  class="wow fadeInUp">
-                                <td class="item-title"><span class="img"  style="background-image: url(images/gpu2.jpg);"></span><span class="text">NVidia GeForce RTX™ 3060 Ti</span></td>
-                                <td>85</td>
-                                <td>80</td>
-                                <td>52</td>
-                                <td>250</td>
+                            <tr class="wow fadeInUp">
+                                <td class="text-start">1/11/2022</td>
+                                <td>#AG18110</td>
                                 <td>
                                     <div class="table-menu">
                                         <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
                                         <div uk-dropdown="mode: click">
                                             <ul>
                                                 <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg></span><span class="text">View details</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 14.5L0.46967 13.9697L0.25 14.1893V14.5H1ZM14 1.5L14.5303 0.96967C14.2374 0.676777 13.7626 0.676777 13.4697 0.96967L14 1.5ZM18 5.5L18.5303 6.03033C18.8232 5.73744 18.8232 5.26256 18.5303 4.96967L18 5.5ZM5 18.5V19.25H5.31066L5.53033 19.0303L5 18.5ZM1 18.5H0.25C0.25 18.9142 0.585786 19.25 1 19.25L1 18.5ZM1.53033 15.0303L14.5303 2.03033L13.4697 0.96967L0.46967 13.9697L1.53033 15.0303ZM13.4697 2.03033L17.4697 6.03033L18.5303 4.96967L14.5303 0.96967L13.4697 2.03033ZM17.4697 4.96967L4.46967 17.9697L5.53033 19.0303L18.5303 6.03033L17.4697 4.96967ZM5 17.75H1V19.25H5V17.75ZM1.75 18.5V14.5H0.25V18.5H1.75ZM10.4697 5.03033L14.4697 9.03033L15.5303 7.96967L11.5303 3.96967L10.4697 5.03033Z" fill="currentColor"/>
-                                            </svg></span><span class="text">Edit info</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15 4.5V16.5C15 17.6046 14.1046 18.5 13 18.5H5C3.89543 18.5 3 17.6046 3 16.5V4.5M12 4.5V3.5C12 2.39543 11.1046 1.5 10 1.5H8C6.89543 1.5 6 2.39543 6 3.5V4.5M1 4.5H17M7 8.5V14.5M11 8.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text">Delete</span></a></li>
+                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></span><span class="text">View details</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr  class="wow fadeInUp">
-                                <td class="item-title"><span class="img"  style="background-image: url(images/ssd.jpg);"></span><span class="text">1TB NVMe SSD</span></td>
-                                <td>85</td>
-                                <td>80</td>
-                                <td>52</td>
-                                <td>250</td>
+                            <tr class="wow fadeInUp">
+                                <td class="text-start">1/11/2022</td>
+                                <td>#AG18110</td>
                                 <td>
                                     <div class="table-menu">
                                         <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
                                         <div uk-dropdown="mode: click">
                                             <ul>
                                                 <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg></span><span class="text">View details</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 14.5L0.46967 13.9697L0.25 14.1893V14.5H1ZM14 1.5L14.5303 0.96967C14.2374 0.676777 13.7626 0.676777 13.4697 0.96967L14 1.5ZM18 5.5L18.5303 6.03033C18.8232 5.73744 18.8232 5.26256 18.5303 4.96967L18 5.5ZM5 18.5V19.25H5.31066L5.53033 19.0303L5 18.5ZM1 18.5H0.25C0.25 18.9142 0.585786 19.25 1 19.25L1 18.5ZM1.53033 15.0303L14.5303 2.03033L13.4697 0.96967L0.46967 13.9697L1.53033 15.0303ZM13.4697 2.03033L17.4697 6.03033L18.5303 4.96967L14.5303 0.96967L13.4697 2.03033ZM17.4697 4.96967L4.46967 17.9697L5.53033 19.0303L18.5303 6.03033L17.4697 4.96967ZM5 17.75H1V19.25H5V17.75ZM1.75 18.5V14.5H0.25V18.5H1.75ZM10.4697 5.03033L14.4697 9.03033L15.5303 7.96967L11.5303 3.96967L10.4697 5.03033Z" fill="currentColor"/>
-                                            </svg></span><span class="text">Edit info</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15 4.5V16.5C15 17.6046 14.1046 18.5 13 18.5H5C3.89543 18.5 3 17.6046 3 16.5V4.5M12 4.5V3.5C12 2.39543 11.1046 1.5 10 1.5H8C6.89543 1.5 6 2.39543 6 3.5V4.5M1 4.5H17M7 8.5V14.5M11 8.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text">Delete</span></a></li>
+                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></span><span class="text">View details</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr  class="wow fadeInUp">
-                                <td class="item-title"><span class="img"  style="background-image: url(images/psu.jpg);"></span><span class="text">600W EVGA Power Supply</span></td>
-                                <td>85</td>
-                                <td>80</td>
-                                <td>52</td>
-                                <td>250</td>
+                            <tr class="wow fadeInUp">
+                                <td class="text-start">1/11/2022</td>
+                                <td>#AG18110</td>
                                 <td>
                                     <div class="table-menu">
                                         <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
                                         <div uk-dropdown="mode: click">
                                             <ul>
                                                 <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg></span><span class="text">View details</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 14.5L0.46967 13.9697L0.25 14.1893V14.5H1ZM14 1.5L14.5303 0.96967C14.2374 0.676777 13.7626 0.676777 13.4697 0.96967L14 1.5ZM18 5.5L18.5303 6.03033C18.8232 5.73744 18.8232 5.26256 18.5303 4.96967L18 5.5ZM5 18.5V19.25H5.31066L5.53033 19.0303L5 18.5ZM1 18.5H0.25C0.25 18.9142 0.585786 19.25 1 19.25L1 18.5ZM1.53033 15.0303L14.5303 2.03033L13.4697 0.96967L0.46967 13.9697L1.53033 15.0303ZM13.4697 2.03033L17.4697 6.03033L18.5303 4.96967L14.5303 0.96967L13.4697 2.03033ZM17.4697 4.96967L4.46967 17.9697L5.53033 19.0303L18.5303 6.03033L17.4697 4.96967ZM5 17.75H1V19.25H5V17.75ZM1.75 18.5V14.5H0.25V18.5H1.75ZM10.4697 5.03033L14.4697 9.03033L15.5303 7.96967L11.5303 3.96967L10.4697 5.03033Z" fill="currentColor"/>
-                                            </svg></span><span class="text">Edit info</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15 4.5V16.5C15 17.6046 14.1046 18.5 13 18.5H5C3.89543 18.5 3 17.6046 3 16.5V4.5M12 4.5V3.5C12 2.39543 11.1046 1.5 10 1.5H8C6.89543 1.5 6 2.39543 6 3.5V4.5M1 4.5H17M7 8.5V14.5M11 8.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text">Delete</span></a></li>
+                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></span><span class="text">View details</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr  class="wow fadeInUp">
-                                <td class="item-title"><span class="img"  style="background-image: url(images/cpu.jpg);"></span><span class="text">Black Fans</span></td>
-                                <td>85</td>
-                                <td>80</td>
-                                <td>52</td>
-                                <td>250</td>
+                            <tr class="wow fadeInUp">
+                                <td class="text-start">1/11/2022</td>
+                                <td>#AG18110</td>
                                 <td>
                                     <div class="table-menu">
                                         <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
                                         <div uk-dropdown="mode: click">
                                             <ul>
                                                 <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg></span><span class="text">View details</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 14.5L0.46967 13.9697L0.25 14.1893V14.5H1ZM14 1.5L14.5303 0.96967C14.2374 0.676777 13.7626 0.676777 13.4697 0.96967L14 1.5ZM18 5.5L18.5303 6.03033C18.8232 5.73744 18.8232 5.26256 18.5303 4.96967L18 5.5ZM5 18.5V19.25H5.31066L5.53033 19.0303L5 18.5ZM1 18.5H0.25C0.25 18.9142 0.585786 19.25 1 19.25L1 18.5ZM1.53033 15.0303L14.5303 2.03033L13.4697 0.96967L0.46967 13.9697L1.53033 15.0303ZM13.4697 2.03033L17.4697 6.03033L18.5303 4.96967L14.5303 0.96967L13.4697 2.03033ZM17.4697 4.96967L4.46967 17.9697L5.53033 19.0303L18.5303 6.03033L17.4697 4.96967ZM5 17.75H1V19.25H5V17.75ZM1.75 18.5V14.5H0.25V18.5H1.75ZM10.4697 5.03033L14.4697 9.03033L15.5303 7.96967L11.5303 3.96967L10.4697 5.03033Z" fill="currentColor"/>
-                                            </svg></span><span class="text">Edit info</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15 4.5V16.5C15 17.6046 14.1046 18.5 13 18.5H5C3.89543 18.5 3 17.6046 3 16.5V4.5M12 4.5V3.5C12 2.39543 11.1046 1.5 10 1.5H8C6.89543 1.5 6 2.39543 6 3.5V4.5M1 4.5H17M7 8.5V14.5M11 8.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text">Delete</span></a></li>
+                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></span><span class="text">View details</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr  class="wow fadeInUp">
-                                <td class="item-title"><span class="img"  style="background-image: url(images/mobo-2.jpg);"></span><span class="text">Corsair H100i 240MM AIO</span></td>
-                                <td>85</td>
-                                <td>80</td>
-                                <td>52</td>
-                                <td>250</td>
+                            <tr class="wow fadeInUp">
+                                <td class="text-start">1/11/2022</td>
+                                <td>#AG18110</td>
                                 <td>
                                     <div class="table-menu">
                                         <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
                                         <div uk-dropdown="mode: click">
                                             <ul>
                                                 <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg></span><span class="text">View details</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 14.5L0.46967 13.9697L0.25 14.1893V14.5H1ZM14 1.5L14.5303 0.96967C14.2374 0.676777 13.7626 0.676777 13.4697 0.96967L14 1.5ZM18 5.5L18.5303 6.03033C18.8232 5.73744 18.8232 5.26256 18.5303 4.96967L18 5.5ZM5 18.5V19.25H5.31066L5.53033 19.0303L5 18.5ZM1 18.5H0.25C0.25 18.9142 0.585786 19.25 1 19.25L1 18.5ZM1.53033 15.0303L14.5303 2.03033L13.4697 0.96967L0.46967 13.9697L1.53033 15.0303ZM13.4697 2.03033L17.4697 6.03033L18.5303 4.96967L14.5303 0.96967L13.4697 2.03033ZM17.4697 4.96967L4.46967 17.9697L5.53033 19.0303L18.5303 6.03033L17.4697 4.96967ZM5 17.75H1V19.25H5V17.75ZM1.75 18.5V14.5H0.25V18.5H1.75ZM10.4697 5.03033L14.4697 9.03033L15.5303 7.96967L11.5303 3.96967L10.4697 5.03033Z" fill="currentColor"/>
-                                            </svg></span><span class="text">Edit info</span></a></li>
-
-                                                <li><a href="#"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15 4.5V16.5C15 17.6046 14.1046 18.5 13 18.5H5C3.89543 18.5 3 17.6046 3 16.5V4.5M12 4.5V3.5C12 2.39543 11.1046 1.5 10 1.5H8C6.89543 1.5 6 2.39543 6 3.5V4.5M1 4.5H17M7 8.5V14.5M11 8.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="text">Delete</span></a></li>
+                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg></span><span class="text">View details</span></a></li>
                                             </ul>
                                         </div>
                                     </div>

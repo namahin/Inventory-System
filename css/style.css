@@ -83,6 +83,9 @@
 html,
 body {
     background: linear-gradient(180deg, #FFFFFF 6.57%, #F6F6F6 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
 }
 
 a,
@@ -591,6 +594,7 @@ table thead tr th:hover .sorting-arrow {
 
 .table-area table thead tr th:last-child {
     padding-right: 30px;
+    text-align: right;
 }
 
 .table-area table tbody {
@@ -632,6 +636,7 @@ table thead tr th:hover .sorting-arrow {
 
 .table-area table tbody tr td:last-child {
     padding-right: 30px;
+    text-align: right;
 }
 
 .table-area table tbody tr td.item-title {
