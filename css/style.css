@@ -45,16 +45,16 @@
 }
 
 ::placeholder {
-    color: #878787;
+    color: #949CA9;
     opacity: 1;
 }
 
 :-ms-input-placeholder {
-    color: #878787;
+    color: #949CA9;
 }
 
 ::-ms-input-placeholder {
-    color: #878787;
+    color: #949CA9;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -765,3 +765,54 @@ table thead tr th:hover .sorting-arrow {
 .breadcrumb ul li:first-child a {}
 
 .breadcrumb ul li:last-child a {}
+
+
+/* input field CSS */
+.pick-list-form {
+    padding: 30px;
+    padding-bottom: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.pick-list-form .field-group {
+    width: 72%;
+    display: flex;
+    gap: 30px;
+}
+
+.pick-list-form .field-group .field {
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+}
+
+.pick-list-form .field-group .field label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.pick-list-form .field-group .field input {
+    background: var(--color-white);
+    border: 1px solid #E8E9EA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--text-color);
+    padding: 13px;
+}
+
+
+.pick-list-form button {
+    width: calc(28% - 30px);
+    display: block;
+    height: 50px;
+}
