@@ -783,7 +783,9 @@ table thead tr th:hover .sorting-arrow {
     display: flex;
     gap: 30px;
 }
-
+.pick-list-form .field-group .field *{
+    transition: linear .3s;
+}
 .pick-list-form .field-group .field {
     width: calc(50% - 15px);
     display: flex;
