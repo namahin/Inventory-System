@@ -809,7 +809,12 @@ table thead tr th:hover .sorting-arrow {
     color: var(--text-color);
     padding: 13px;
 }
-
+.pick-list-form .field-group .field:focus-within label{
+    color: #949CA9;
+}
+.pick-list-form .field-group .field input:focus{
+    border-color: var(--color-primary);
+}
 
 .pick-list-form button {
     width: calc(28% - 30px);
