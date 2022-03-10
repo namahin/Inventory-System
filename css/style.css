@@ -1061,6 +1061,13 @@ table thead tr th:hover .sorting-arrow {
 }
 .field-group.field-group-2-3{
     width: 100%;
+    padding-bottom: 10px;
+}
+.field-group.field-group-2-3 .col-4{
+    width: 33.33333333%;
+}
+.field-group.field-group-2-3 .col-8{
+    width: 66.66666667%;
 }
 .current-stock-right .table-area {
     margin: 0;
@@ -1128,6 +1135,7 @@ table thead tr th:hover .sorting-arrow {
     line-height: 18px;
     letter-spacing: 1px;
     color: #5E5873;
+    text-align: left;
 }
 
 .add-part-box table thead tr th:first-child {
@@ -1224,7 +1232,15 @@ table thead tr th:hover .sorting-arrow {
 .add-part-box table tbody tr:last-child::after {
     display: none;
 }
-
+.add-part-box.add-part-box-ram-report{}
+.add-part-box.add-part-box-ram-report table{}
+.add-part-box.add-part-box-ram-report table tr{}
+.add-part-box.add-part-box-ram-report table tr td input{
+    width: 100%;
+}
+.add-part-box.add-part-box-ram-report table tr td select{
+    width: 100%;
+}
 .part-multi-area-inner-2 table tbody tr td:first-child {
     width: 40%;
 }
