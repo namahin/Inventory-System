@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category | Inventory System</title>
+    <title>Create Software Keys | Inventory System</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <!-- Google Fonts 'Poppins' -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -92,7 +92,7 @@
                             </svg></span><span class="menu-text">Pick List</span></a></li>
 
                         <!-- Software Keys -->
-                        <li><a href="software-keys.html"><span class="menu-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li><a href="software-keys.html" class="active"><span class="menu-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.1252 8.34188L11.5792 9.79594L13.1711 8.20406L9.7961 4.82906C9.69162 4.72446 9.56754 4.64149 9.43097 4.58487C9.2944 4.52826 9.148 4.49911 9.00016 4.49911C8.85232 4.49911 8.70593 4.52826 8.56935 4.58487C8.43278 4.64149 8.30871 4.72446 8.20422 4.82906L4.82922 8.20406L6.4211 9.79594L7.87516 8.34188V13.5H10.1252V8.34188Z" fill="#2B2B43"/>
                             <path d="M1.125 10.125C1.74632 10.125 2.25 9.62132 2.25 9C2.25 8.37868 1.74632 7.875 1.125 7.875C0.50368 7.875 0 8.37868 0 9C0 9.62132 0.50368 10.125 1.125 10.125Z" fill="currentColor"/>
                             <path d="M3.22401 5.62602C3.53467 5.08794 3.35031 4.3999 2.81223 4.08924C2.27415 3.77858 1.58611 3.96294 1.27545 4.50102C0.964791 5.0391 1.14915 5.72714 1.68723 6.0378C2.22531 6.34846 2.91335 6.1641 3.22401 5.62602Z" fill="#53576C"/>
@@ -103,7 +103,7 @@
                             </svg></span><span class="menu-text">Software Keys</span></a></li>
 
                         <!-- Category -->
-                        <li><a href="category.html" class="active"><span class="menu-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li><a href="category.html"><span class="menu-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L6.625 9.47059V15.8235L13.375 19V9.47059L19 1H1Z" stroke="#494B74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg></span><span class="menu-text">Category</span></a></li>
 
@@ -164,217 +164,35 @@
                 <div class="action-bar wow fadeInUp">
                     <div class="row">
                         <div class="col-4">
-                            <h2 class="page-title">Category</h2>
-                        </div>
-                        <div class="col-8">
-                            <div class="action-bar-group">
-                                <form action="">
-                                    <label for="search">
-                                        <img src="images/icon/search-icon-2.svg" alt="">
-                                        <input id="search" type="search" placeholder="Hardware name...">
-                                    </label>
-                                    <button type="submit" class="btn-theme">Search</button>
-                                </form>
-                                <a href="create-category.html" class="btn-theme"><img src="images/icon/Plus-icon.svg" alt="">Create Category</a>
-                            </div>
+                            <h2 class="page-title">Create Software Keys</h2>
                         </div>
                     </div>
                 </div>
 
                 <!-- table content start from here -->
                 <div class="table-area">
-                    <table>
-                        <thead class="wow fadeInUp">
-                            <tr>
-                                <th class="text-start">Categoory Name</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">CPU</td>
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Motherboard</td>
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">GPU</td>
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">PSU</td>
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">CPU Cooler</td>
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">RAM</td>
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">SSD</td>
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Hard Drive</td>
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Accessories</td>
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Peripherals</td>
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <!-- table Breadcrumb -->
-                    <div class="breadcrumb wow fadeInUp">
-                        <div class="row align-items-center">
-                            <div class="col-4"><p>Showing 1 to 10 items</p></div>
-                            <div class="col-8">
-                                <ul>
-                                    <li><a href="#"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 1L1 6L6 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg></a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg></a></li>
-                                </ul>
+                    <form action="#" class="pick-list-form create-part-form wow fadeInUp">
+                        <div class="field-group field-group-col-2">
+                            <div class="field">
+                                <label for="hardwareName">Software Name</label>
+                                <input id="hardwareName" type="text" placeholder="Write here" value="Microsoft Word">
+                            </div>
+                            <div class="field">
+                                <label for="Keys">Keys</label>
+                                <input id="Keys" type="text" placeholder="Write here">
                             </div>
                         </div>
-                    </div>
+                        <div class="create-part-button-group">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="software-keys.html" class="btn-theme btn-theme-secondary">Go Back</a>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn-theme">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <!-- table content end here -->
                 <!-- page content end here -->

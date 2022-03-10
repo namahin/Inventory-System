@@ -810,13 +810,24 @@ table thead tr th:hover .sorting-arrow {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 18px 25px;
-    margin-bottom: 20%;
+    min-height: 450px;
+    grid-auto-rows: min-content;
 }
 
 .field-group.field-group-col-3 .field {
     width: 100%;
 }
-
+.field-group.field-group-col-2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 18px 25px;
+    min-height: 450px;
+    grid-auto-rows: min-content;
+}
+.field-group.field-group-col-2 .field{
+    width: 100%;
+}
 .create-part-form {
     padding-bottom: 40px;
 }
@@ -1067,3 +1078,4 @@ table thead tr th:hover .sorting-arrow {
 .current-stock-right .table-area tbody tr td:last-child {
     padding-right: 26px;
 }
+
