@@ -1112,14 +1112,10 @@ table thead tr th:hover .sorting-arrow {
     padding-top: 30px;
 }
 
-.part-multi-area-inner {}
-
 .add-part-box {
     border: 1px solid #E8E9EA;
     margin-top: 12px;
 }
-
-.add-part-box table {}
 
 .add-part-box table thead {
     background-color: #F3F2F7;
@@ -1147,8 +1143,6 @@ table thead tr th:hover .sorting-arrow {
     text-align: left;
     padding-right: 18px;
 }
-
-.add-part-box table tbody {}
 
 .add-part-box table tbody tr {
     height: 60px;
@@ -1188,8 +1182,6 @@ table thead tr th:hover .sorting-arrow {
     width: 100%;
     min-width: 250px;
 }
-
-.add-part-box table tbody tr td .themeselected {}
 
 .add-part-box table tbody tr td .themeselected {
     height: 38px;
@@ -1232,9 +1224,7 @@ table thead tr th:hover .sorting-arrow {
 .add-part-box table tbody tr:last-child::after {
     display: none;
 }
-.add-part-box.add-part-box-ram-report{}
-.add-part-box.add-part-box-ram-report table{}
-.add-part-box.add-part-box-ram-report table tr{}
+
 .add-part-box.add-part-box-ram-report table tr td input{
     width: 100%;
 }
