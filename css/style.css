@@ -81,6 +81,7 @@ button {
     user-select: none;
 }
 
+/* 
 input[type=checkbox]::after {
     content: "";
     height: 16px;
@@ -101,6 +102,16 @@ input[type=checkbox]:checked::after {
     background-position: center center;
     background-color: var(--color-primary);
     border-color: var(--color-primary);
+} */
+
+
+select {
+    -webkit-appearance: none;
+    background: url(../images/icon/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+    padding-right: 30px !important;
 }
 
 table thead tr th span.sorting-arrow {
@@ -579,9 +590,9 @@ table thead tr th:hover .sorting-arrow {
 }
 
 .table-area table tbody {
-    padding: 0 30px;
+    /* padding: 0 30px; */
     overflow: hidden;
-    margin: 0 30px;
+    /* margin: 0 30px; */
     box-sizing: border-box;
 }
 
@@ -773,7 +784,8 @@ table thead tr th:hover .sorting-arrow {
 }
 
 .field-group .field input,
-.field-group .field select {
+.field-group .field select,
+.field-group .field textarea {
     background: var(--color-white);
     border: 1px solid #E8E9EA;
     box-sizing: border-box;
@@ -795,7 +807,7 @@ table thead tr th:hover .sorting-arrow {
     color: #949CA9;
 }
 
-.field-group .field input:focus {
+.field-group .field input:focus, .field-group .field textarea:focus {
     border-color: var(--color-primary);
 }
 
@@ -817,7 +829,8 @@ table thead tr th:hover .sorting-arrow {
 .field-group.field-group-col-3 .field {
     width: 100%;
 }
-.field-group.field-group-col-2{
+
+.field-group.field-group-col-2 {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -825,9 +838,11 @@ table thead tr th:hover .sorting-arrow {
     min-height: 450px;
     grid-auto-rows: min-content;
 }
-.field-group.field-group-col-2 .field{
+
+.field-group.field-group-col-2 .field {
     width: 100%;
 }
+
 .create-part-form {
     padding-bottom: 40px;
 }
@@ -1044,7 +1059,9 @@ table thead tr th:hover .sorting-arrow {
 .field-group.field-group-col-1 .field {
     width: 100%;
 }
-
+.field-group.field-group-2-3{
+    width: 100%;
+}
 .current-stock-right .table-area {
     margin: 0;
     margin-bottom: 39px;
@@ -1079,3 +1096,143 @@ table thead tr th:hover .sorting-arrow {
     padding-right: 26px;
 }
 
+.part-multi-area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 36px;
+    border-top: 1px solid #e8e9ea80;
+    padding-top: 30px;
+}
+
+.part-multi-area-inner {}
+
+.add-part-box {
+    border: 1px solid #E8E9EA;
+    margin-top: 12px;
+}
+
+.add-part-box table {}
+
+.add-part-box table thead {
+    background-color: #F3F2F7;
+}
+
+.add-part-box table thead tr {
+    height: 38px;
+}
+
+.add-part-box table thead tr th {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #5E5873;
+}
+
+.add-part-box table thead tr th:first-child {
+    text-align: left;
+    padding-left: 18px;
+}
+
+.add-part-box table thead tr th:last-child {
+    text-align: left;
+    padding-right: 18px;
+}
+
+.add-part-box table tbody {}
+
+.add-part-box table tbody tr {
+    height: 60px;
+    border: 0;
+}
+
+.add-part-box table tbody tr::after {
+    left: 0;
+    right: 0;
+}
+
+.add-part-box table tbody tr td {
+    padding: 0 8px;
+}
+
+.add-part-box table tbody tr td:first-child {
+    padding-left: 18px;
+}
+
+.add-part-box table tbody tr td:last-child {
+    padding-right: 18px;
+}
+
+.add-part-box table tbody tr td select {
+    border: 1px solid #D8D6DE;
+    border-radius: 6px;
+    height: 38px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #6E6B7B;
+    padding: 7px 13px;
+    width: 142px;
+}
+
+.add-part-box table tbody tr td .themediv {
+    width: 100%;
+    min-width: 250px;
+}
+
+.add-part-box table tbody tr td .themeselected {}
+
+.add-part-box table tbody tr td .themeselected {
+    height: 38px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #6E6B7B;
+    padding: 7px 13px;
+    text-align: left;
+}
+
+.add-part-box table tbody tr td .themeselected::after {
+    top: 14px;
+    width: 12px;
+    right: 10px;
+}
+
+.add-part-box table tbody tr td .themesearchinput {
+    width: 100%;
+}
+
+.add-part-box table tbody tr td .themelist {
+    text-align: left;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.add-part-box table tbody tr td input {
+    border: 1px solid #D8D6DE;
+    border-radius: 6px;
+    height: 38px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #6E6B7B;
+    padding: 7px 13px;
+    width: 99px;
+}
+
+.add-part-box table tbody tr:last-child::after {
+    display: none;
+}
+
+.part-multi-area-inner-2 table tbody tr td:first-child {
+    width: 40%;
+}
+
+.part-multi-area-inner-2 table tbody tr td:last-child {
+    width: 60%;
+}
+
+.part-multi-area-inner-2 table tbody tr td input {
+    width: 100%;
+}
