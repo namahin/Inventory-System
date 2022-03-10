@@ -543,10 +543,6 @@ table thead tr th:hover .sorting-arrow {
     border-radius: 5px;
 }
 
-.action-bar-group form select option {}
-
-.action-bar-group form button {}
-
 .table-area {
     background: #FFFFFF;
     border-radius: 10px;
@@ -558,8 +554,6 @@ table thead tr th:hover .sorting-arrow {
     width: 100%;
     border-spacing: 0;
 }
-
-.table-area table thead {}
 
 .table-area table thead tr {
     height: 75px;
@@ -644,10 +638,6 @@ table thead tr th:hover .sorting-arrow {
     background-color: var(--color-white);
 }
 
-.table-area table tbody tr td.item-title .text {}
-
-.table-area table tbody tr td .table-menu {}
-
 .table-area table tbody tr td .table-menu button {
     background: transparent;
     border: none;
@@ -692,8 +682,6 @@ table thead tr th:hover .sorting-arrow {
     text-align: center;
     display: table-cell;
 }
-
-.table-area table tbody tr td .table-menu .uk-dropdown ul li a .text {}
 
 .table-area table tbody tr td .table-menu .uk-dropdown ul li a:hover {
     font-weight: 500;
@@ -749,11 +737,6 @@ table thead tr th:hover .sorting-arrow {
     color: var(--color-white);
 }
 
-.breadcrumb ul li:first-child a {}
-
-.breadcrumb ul li:last-child a {}
-
-
 /* input field CSS */
 .pick-list-form {
     padding: 30px;
@@ -771,17 +754,17 @@ table thead tr th:hover .sorting-arrow {
     gap: 30px;
 }
 
-.pick-list-form .field-group .field * {
+.field * {
     transition: linear .3s;
 }
 
-.pick-list-form .field-group .field {
+.field-group .field {
     width: calc(50% - 15px);
     display: flex;
     flex-direction: column;
 }
 
-.pick-list-form .field-group .field label {
+.field-group .field label {
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -789,8 +772,8 @@ table thead tr th:hover .sorting-arrow {
     margin-bottom: 5px;
 }
 
-.pick-list-form .field-group .field input,
-.pick-list-form .field-group .field select {
+.field-group .field input,
+.field-group .field select {
     background: var(--color-white);
     border: 1px solid #E8E9EA;
     box-sizing: border-box;
@@ -802,11 +785,17 @@ table thead tr th:hover .sorting-arrow {
     padding: 13px;
 }
 
-.pick-list-form .field-group .field:focus-within label {
+.field-group .field input:disabled,
+.field-group .field select:disabled {
+    background-color: #F4F6F9;
+}
+
+.field-group .field:focus-within label,
+.field.disabled label {
     color: #949CA9;
 }
 
-.pick-list-form .field-group .field input:focus {
+.field-group .field input:focus {
     border-color: var(--color-primary);
 }
 
@@ -866,7 +855,8 @@ table thead tr th:hover .sorting-arrow {
     vertical-align: middle;
     cursor: pointer;
     overflow: hidden;
-    width: inherit
+    width: inherit;
+    background-color: var(--color-white);
 }
 
 .themediv.open>.themedropdown {
@@ -997,6 +987,83 @@ table thead tr th:hover .sorting-arrow {
     display: block;
 }
 
-.themedropdown.open .themeselected{
+.themedropdown.open .themeselected {
     border: none;
+}
+
+.current-stock-container {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 28px;
+}
+
+.current-stock-left .action-bar {
+    padding: 0;
+    margin-bottom: 17px;
+}
+
+.current-stock-right {
+    width: 100%;
+}
+
+
+.current-stock-left .content-area {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 12px 20px 30px;
+}
+
+.current-stock-left .content-area .thumbnail {
+    margin-bottom: 18px;
+}
+
+.current-stock-left .content-area .thumbnail img {
+    border-radius: 8px;
+}
+
+.field-group.field-group-col-1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 16px 0;
+    margin-bottom: 44px;
+}
+
+.field-group.field-group-col-1 .field {
+    width: 100%;
+}
+
+.current-stock-right .table-area {
+    margin: 0;
+    margin-bottom: 39px;
+}
+
+.current-stock-right .table-area:last-child {
+    margin-bottom: 0;
+}
+
+.current-stock-right .table-area thead tr th:first-child {
+    padding-left: 26px;
+}
+
+.current-stock-right .table-area thead tr th:last-child {
+    padding-right: 26px;
+}
+
+.current-stock-right .table-area tbody tr::after {
+    left: 21px;
+    right: 21px;
+}
+
+.current-stock-right .table-area tbody tr:last-child::after {
+    display: none;
+}
+
+.current-stock-right .table-area tbody tr td:first-child {
+    padding-left: 26px;
+}
+
+.current-stock-right .table-area tbody tr td:last-child {
+    padding-right: 26px;
 }
