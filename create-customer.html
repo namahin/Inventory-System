@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customers | Inventory System</title>
+    <title>Create Customer | Inventory System</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <!-- Google Fonts 'Poppins' -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -164,251 +164,63 @@
                 <div class="action-bar wow fadeInUp">
                     <div class="row">
                         <div class="col-4">
-                            <h2 class="page-title">Customers</h2>
-                        </div>
-                        <div class="col-8">
-                            <div class="action-bar-group">
-                                <form action="">
-                                    <label for="search">
-                                        <img src="images/icon/search-icon-2.svg" alt="">
-                                        <input id="search" type="search" placeholder="Hardware name...">
-                                    </label>
-                                    <button type="submit" class="btn-theme">Search</button>
-                                </form>
-                                <a href="create-customer.html" class="btn-theme"><img src="images/icon/Plus-icon.svg" alt="">Create Customer</a>
-                            </div>
+                            <h2 class="page-title">Create Customer</h2>
                         </div>
                     </div>
                 </div>
 
                 <!-- table content start from here -->
                 <div class="table-area">
-                    <table>
-                        <thead class="wow fadeInUp">
-                            <tr>
-                                <th>Report Date</th>
-                                <th>Phone Number</th>
-                                <th class="text-start">Email</th>
-                                <th class="text-start">Countrry</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Josh Silva</td>
-                                <td>+10524667402</td>
-                                <td class="text-start">customer@gmail.com</td>
-                                <td class="text-start">United State</td>                                
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Andrew karmer</td>
-                                <td>+10524667402</td>
-                                <td class="text-start">customer@gmail.com</td>
-                                <td class="text-start">Canada</td>                                
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Senthil Sawr</td>
-                                <td>+10525987525</td>
-                                <td class="text-start">customer@gmail.com</td>
-                                <td class="text-start">Austarila</td>                                
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Kosta Konsia</td>
-                                <td>+10524667402</td>
-                                <td class="text-start">customer@gmail.com</td>
-                                <td class="text-start">Ingland</td>                                
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Kushal Paraar</td>
-                                <td>+10524667402</td>
-                                <td class="text-start">customer@gmail.com</td>
-                                <td class="text-start">India</td>                                
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Homlwar Maria</td>
-                                <td>+10524667402</td>
-                                <td class="text-start">customer@gmail.com</td>
-                                <td class="text-start">Bangladesh</td>                                
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Kethrin July</td>
-                                <td>+10524667402</td>
-                                <td class="text-start">customer@gmail.com</td>
-                                <td class="text-start">Pakistan</td>                                
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Maria Luis</td>
-                                <td>+10524667402</td>
-                                <td class="text-start">customer@gmail.com</td>
-                                <td class="text-start">France</td>                                
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Kamar kah Kio</td>
-                                <td>+10524667402</td>
-                                <td class="text-start">customer@gmail.com</td>
-                                <td class="text-start">Grees</td>                                
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="wow fadeInUp">
-                                <td class="text-start">Andew Kaula</td>
-                                <td>+10524667402</td>
-                                <td class="text-start">customer@gmail.com</td>
-                                <td class="text-start">Turkey</td>                                
-                                <td>
-                                    <div class="table-menu">
-                                        <button type="button"><img src="images/icon/more-icon.svg" alt=""></button>
-                                        <div uk-dropdown="mode: click">
-                                            <ul>
-                                                <li><a href="#"><span class="icon"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 8C1 8 4.63636 1 11 1C17.3636 1 21 8 21 8C21 8 17.3636 15 11 15C4.63636 15 1 8 1 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg></span><span class="text">View details</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-                    <!-- table Breadcrumb -->
-                    <div class="breadcrumb wow fadeInUp">
-                        <div class="row align-items-center">
-                            <div class="col-4"><p>Showing 1 to 10 items</p></div>
-                            <div class="col-8">
-                                <ul>
-                                    <li><a href="#"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 1L1 6L6 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg></a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg></a></li>
-                                </ul>
+                    <form action="#" class="pick-list-form create-part-form wow fadeInUp">
+                        <div class="field-group field-group-col-3">
+                            <div class="field">
+                                <label for="hardwareName">Customer Name</label>
+                                <input id="hardwareName" type="text" placeholder="Write here" value="Josh Silva">
+                            </div>
+                            <div class="field">
+                                <label for="imageURL">Customer Email</label>
+                                <input id="imageURL" type="email" placeholder="Write here">
+                            </div>
+                            <div class="field">
+                                <label for="location">Customer Phone Number</label>
+                                <input id="location" type="tel" placeholder="Write here">
+                            </div>
+                            <div class="field">
+                                <label for="Street">Street</label>
+                                <input id="Street" type="text" placeholder="Write here">
+                            </div>
+                            <div class="field">
+                                <label for="scanID">City</label>
+                                <input id="scanID" type="text" placeholder="Write here">
+                            </div>
+                            <div class="field">
+                                <label for="State">State</label>
+                                <input id="State" type="text" placeholder="Write here">
+                            </div>
+                            <div class="field">
+                                <label for="Country">Country</label>
+                                <input id="Country" type="text" placeholder="Write here">
+                            </div>
+                            <div class="field">
+                                <label for="ZipCode">Zip Code</label>
+                                <input id="ZipCode" type="text" placeholder="Write here">
+                            </div>
+                            <div class="field">
+                                <label for="Discount">Discount Codes</label>
+                                <input id="Discount" type="text" placeholder="Write here">
                             </div>
                         </div>
-                    </div>
+                        <div class="create-part-button-group">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="customers.html" class="btn-theme btn-theme-secondary">Go Back</a>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn-theme">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <!-- table content end here -->
                 <!-- page content end here -->
