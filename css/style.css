@@ -501,6 +501,7 @@ table thead tr th:hover .sorting-arrow {
 .action-bar {
     padding: 0 20px;
     margin-bottom: 23px;
+    height: 44px;
 }
 
 .action-bar-group {
@@ -508,14 +509,14 @@ table thead tr th:hover .sorting-arrow {
     justify-content: flex-end;
     gap: 20px;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .action-bar-group form {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .action-bar-group form label {
@@ -552,6 +553,39 @@ table thead tr th:hover .sorting-arrow {
     line-height: 22px;
     background-color: #F6F6F6;
     border-radius: 5px;
+}
+
+.action-bar-group form .themediv {
+    width: 173px;
+}
+
+.action-bar-group form .themedropdown {
+    min-height: 40px;
+    width: 175px;
+    top: -2px;
+}
+
+.action-bar-group form .themeselected {
+    width: 173px;
+    min-height: 42px;
+    padding: 9px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.action-bar-group form .themeselected::after {
+    top: 15px;
+    right: 13px;
+}
+
+.action-bar-group form .themesearchinput {
+    height: 38px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #6E6B7B;
+    padding: 7px 13px;
 }
 
 .table-area {
@@ -858,7 +892,8 @@ table thead tr th:hover .sorting-arrow {
     margin-bottom: 20px;
     position: relative;
 }
-.field-group .field .drop-file-placeholder::before{
+
+.field-group .field .drop-file-placeholder::before {
     content: "";
     position: absolute;
     left: 0;
@@ -869,6 +904,7 @@ table thead tr th:hover .sorting-arrow {
     border-radius: 6px;
     z-index: 1;
 }
+
 .field-group .field .drop-file-placeholder h4 {
     font-weight: 500;
     font-size: 11px;
@@ -908,9 +944,10 @@ table thead tr th:hover .sorting-arrow {
 }
 
 /* searchable dropdown CSS */
-.themediv *{
+.themediv * {
     transition: linear .3s;
 }
+
 .themediv {
     position: relative;
     min-height: 34px;
@@ -1301,10 +1338,12 @@ table thead tr th:hover .sorting-arrow {
 .part-multi-area-inner-2 table tbody tr td input {
     width: 100%;
 }
-.part-multi-area.part-multi-area-purchase{
+
+.part-multi-area.part-multi-area-purchase {
     grid-template-columns: 70% 30%;
     align-items: end;
 }
+
 .order-view-box {
     background: #FCFCFC;
     border: 1px solid #E9E9E9;
