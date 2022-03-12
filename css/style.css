@@ -1292,6 +1292,10 @@ table thead tr th:hover .sorting-arrow {
     color: var(--color-primary);
 }
 
+.order-view-box.order-view-box-software-key {
+    margin-bottom: 370px;
+}
+
 .part-multi-area.order-view-summery {
     padding-top: 0;
     border-top: none;
