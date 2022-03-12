@@ -1267,7 +1267,9 @@ table thead tr th:hover .sorting-arrow {
     margin-bottom: 18px;
 }
 
-.order-view-box h4 span {}
+.order-view-box h4 span {
+    color: var(--color-primary);
+}
 
 .order-view-box table {}
 
