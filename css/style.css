@@ -567,8 +567,8 @@ table thead tr th:hover .sorting-arrow {
 
 .action-bar-group form .themeselected {
     width: 173px;
-    min-height: 42px;
-    padding: 9px 15px;
+    min-height: 40px;
+    padding: 8px 15px;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
