@@ -1271,19 +1271,10 @@ table thead tr th:hover .sorting-arrow {
     color: var(--color-primary);
 }
 
-.order-view-box table {}
-
-.order-view-box table thead {}
-
-.order-view-box table thead tr {}
-
-.order-view-box table thead tr th {}
-
-.order-view-box table tbody {}
-
 .order-view-box table tbody tr {
     height: auto;
 }
+
 .order-view-box table tbody tr::after {
     display: none;
 }
@@ -1320,21 +1311,10 @@ table thead tr th:hover .sorting-arrow {
     padding: 27px;
 }
 
-.order-view-part.add-part-box table {}
-
-.order-view-part.add-part-box table thead {}
 
 .order-view-part.add-part-box table thead tr {
     height: 38px;
 }
-
-.order-view-part.add-part-box table thead tr td {}
-
-.order-view-part.add-part-box table {}
-
-.order-view-part.add-part-box table tbody {}
-
-.order-view-part.add-part-box table tbody tr {}
 
 .order-view-part.add-part-box table tbody tr td {
     font-weight: 400;
@@ -1344,4 +1324,44 @@ table thead tr th:hover .sorting-arrow {
     color: #6E6B7B;
     text-align: left;
 }
-.create-part-button-group.sales-button-group{padding: 22px;padding-top: 0;}
+
+.create-part-button-group.sales-button-group {
+    padding: 22px;
+    padding-top: 0;
+}
+
+.sales-order-upload-dropzone {
+    width: 100%;
+    margin-bottom: 300px;
+}
+
+.sales-order-upload-dropzone label {
+    background: rgba(0, 158, 247, 0.05);
+    border: 2px dashed var(--color-primary);
+    height: 375px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.sales-order-upload-dropzone label h4 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 13px;
+}
+
+.sales-order-upload-dropzone label p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--color-primary);
+    margin: 0;
+}
