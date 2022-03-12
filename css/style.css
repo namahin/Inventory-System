@@ -587,7 +587,9 @@ table thead tr th:hover .sorting-arrow {
     color: #6E6B7B;
     padding: 7px 13px;
 }
-
+.action-bar-group form .btn-theme{
+    order: 1;
+}
 .table-area {
     background: #FFFFFF;
     border-radius: 10px;
