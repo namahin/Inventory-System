@@ -807,7 +807,8 @@ table thead tr th:hover .sorting-arrow {
     color: #949CA9;
 }
 
-.field-group .field input:focus, .field-group .field textarea:focus {
+.field-group .field input:focus,
+.field-group .field textarea:focus {
     border-color: var(--color-primary);
 }
 
@@ -1059,16 +1060,20 @@ table thead tr th:hover .sorting-arrow {
 .field-group.field-group-col-1 .field {
     width: 100%;
 }
-.field-group.field-group-2-3{
+
+.field-group.field-group-2-3 {
     width: 100%;
     padding-bottom: 10px;
 }
-.field-group.field-group-2-3 .col-4{
+
+.field-group.field-group-2-3 .col-4 {
     width: 33.33333333%;
 }
-.field-group.field-group-2-3 .col-8{
+
+.field-group.field-group-2-3 .col-8 {
     width: 66.66666667%;
 }
+
 .current-stock-right .table-area {
     margin: 0;
     margin-bottom: 39px;
@@ -1225,12 +1230,14 @@ table thead tr th:hover .sorting-arrow {
     display: none;
 }
 
-.add-part-box.add-part-box-ram-report table tr td input{
+.add-part-box.add-part-box-ram-report table tr td input {
     width: 100%;
 }
-.add-part-box.add-part-box-ram-report table tr td select{
+
+.add-part-box.add-part-box-ram-report table tr td select {
     width: 100%;
 }
+
 .part-multi-area-inner-2 table tbody tr td:first-child {
     width: 40%;
 }
@@ -1242,3 +1249,97 @@ table thead tr th:hover .sorting-arrow {
 .part-multi-area-inner-2 table tbody tr td input {
     width: 100%;
 }
+
+.order-view-box {
+    background: #FCFCFC;
+    border: 1px solid #E9E9E9;
+    border-radius: 6px;
+    margin: 22px;
+    margin-top: 46px;
+    padding: 30px 25px 50px;
+}
+
+.order-view-box h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5E5873;
+    margin-bottom: 18px;
+}
+
+.order-view-box h4 span {}
+
+.order-view-box table {}
+
+.order-view-box table thead {}
+
+.order-view-box table thead tr {}
+
+.order-view-box table thead tr th {}
+
+.order-view-box table tbody {}
+
+.order-view-box table tbody tr {
+    height: auto;
+}
+.order-view-box table tbody tr::after {
+    display: none;
+}
+
+.order-view-box table tbody tr td {
+    text-align: left !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6E6B7B;
+    padding: 5px 0 !important;
+}
+
+.part-multi-area.order-view-summery {
+    padding-top: 0;
+    border-top: none;
+    padding: 0 22px;
+    margin-bottom: 230px;
+}
+
+.order-view-part.add-part-box {
+    background: #FCFCFC;
+    border: 1px solid #E8E9EA;
+    border-radius: 6px;
+    margin-top: 0;
+}
+
+.order-view-part.add-part-box h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5E5873;
+    margin: 0;
+    padding: 27px;
+}
+
+.order-view-part.add-part-box table {}
+
+.order-view-part.add-part-box table thead {}
+
+.order-view-part.add-part-box table thead tr {
+    height: 38px;
+}
+
+.order-view-part.add-part-box table thead tr td {}
+
+.order-view-part.add-part-box table {}
+
+.order-view-part.add-part-box table tbody {}
+
+.order-view-part.add-part-box table tbody tr {}
+
+.order-view-part.add-part-box table tbody tr td {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    color: #6E6B7B;
+    text-align: left;
+}
+.create-part-button-group.sales-button-group{padding: 22px;padding-top: 0;}
