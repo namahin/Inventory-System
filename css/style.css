@@ -1365,3 +1365,7 @@ table thead tr th:hover .sorting-arrow {
     color: var(--color-primary);
     margin: 0;
 }
+
+.order-view-summery.order-view-summery-col-1{
+    grid-template-columns: repeat(1, 1fr);
+}
