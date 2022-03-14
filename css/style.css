@@ -1473,13 +1473,12 @@ table thead tr th:hover .sorting-arrow {
     grid-template-columns: repeat(1, 1fr);
 }
 
-.fulfilled-box{}
 .fulfilled-box .themediv{
     width: auto !important;
     min-width: 160px !important;
 }
 .fulfilled-box .themedropdown.open{
-    min-width: 160px !important;
+    min-width: 100% !important;
 }
 .fulfilled-box .themedropdown .themesearch{
     display: none !important;
